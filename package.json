@@ -7,7 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "build": "browserify app/assets/javascripts/components/side_menu.js.jsx > app/assets/javascripts/components/side_menu_build.js.jsx"
+    "build": "browserify -t reactify app/assets/javascripts/components/side_menu.js.jsx > app/assets/javascripts/components/side_menu_build.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   },
   "repository": {
     "type": "git",
