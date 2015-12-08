@@ -17,3 +17,7 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+// Setup React in global scope
+var React = window.React = global.React = require('react');
+window.$ = window.jQuery = require('jquery')
+require('jquery-ujs')

@@ -1,6 +1,9 @@
-var SideNav = require("react-sidenav");
+React = require('react/addons');
+import component from './component.js'
+const SideNav = require('react-sidenav');
 
-var SideMenu = React.createClass({
+
+const SideMenu = React.createClass({
 
   render: function(){
     var nav = [
@@ -15,3 +18,5 @@ var SideMenu = React.createClass({
       );
   }
 });
+
+module.exports = SideMenu;
